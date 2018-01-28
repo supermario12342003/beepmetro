@@ -1,0 +1,6 @@
+[submodule "beepmetro-client"]
+	path = beepmetro-client
+	url = https://github.com/supermario12342003/beepmetro-client.git
+[submodule "beepmetro-server"]
+	path = beepmetro-server
+	url = https://github.com/supermario12342003/beepmetro-server.git
