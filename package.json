@@ -11,9 +11,9 @@
     "install": "npm install *client && npm install *server && npm run build",
     "serve": "node *server/server.js",
     "start": "npm run install && npm run serve",
-    "heroku:push1": "cd *server && git checkout heroku; cd - && npm run build:server",
-    "heroku:push2": "cd *server && git add . ; git commit -m 'new' ; git push heroku heroku:master ; git checkout master",
-    "heroku": "npm run heroku:push1 && npm run heroku:push2"
+    "heroku:pre": "cd *server && npm run heroku:pre && cd -",
+    "heroku:push": "npm run build:server && cd *server && npm run heroku:push",
+    "heroku": "npm run heroku:pre && npm run heroku:push"
   },
   "repository": {
     "type": "git",
